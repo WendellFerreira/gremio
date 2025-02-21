@@ -3,12 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #000;
     color: #333;
+    height: 100vh;
 }
 
 /* Cabeçalho */
@@ -16,33 +18,41 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0044cc;
+    background-color: #FFA500;
     color: white;
     padding: 20px 50px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
+    padding: 40px 4%;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover {
+    color: #5c5c5c;
+    transform: scale(1.05);
 }
 
 header nav ul {
     list-style-type: none;
-    display: flex;
 }
 
-header nav ul li {
-    margin-left: 20px;
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
 }
 
 header nav ul li a {
-    color: white;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.2rem;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
 }
 
 /* Seção Hero (Home) */
@@ -51,7 +61,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0044cc;
+    background-color: #000;
     color: white;
     text-align: center;
     padding: 20px;
