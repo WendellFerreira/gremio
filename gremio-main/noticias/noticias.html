@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
+    wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,
+    200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+    <!--FIM GOOGLE FONTS-->
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!--FIM BOOTSTRAP ICONS-->
+    <title>Grêmio Estudantil - Notícias</title>
+    <link rel="stylesheet" href="./stylenoticias/noticias.css">
+    <link rel="stylesheet" href="./scriptnoticias/noticias.js">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="./imgnoticias/WhatsApp Image 2025-02-28 at 13.31.53.jpeg">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <a href="../home/home.html"><img src="./imgnoticias/WhatsApp Image 2025-02-28 at 13.31.53.jpeg" alt="Imagem Redonda" class="img-redonda"></a>
+        </div>
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="./noticias.html">Notícias</a></li>
+                <li><a href="../integrantes/integrantes.html">Integrantes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Notícias -->
+    <section id="noticias" class="section">
+        <h2>Últimas Notícias</h2>
+
+        <!-- Filtros de Notícias -->
+        <div class="filters">
+            <label for="categoria">Categoria:</label>
+            <select id="categoria">
+                <option value="todos">Todos</option>
+                <option value="eventos">Eventos</option>
+                <option value="informes">Informes</option>
+                <option value="comunicados">Comunicados</option>
+            </select>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data">
+        </div>
+
+        <!-- Lista de Notícias -->
+        <div id="noticias-lista" class="noticias-lista">
+            <!-- As notícias serão carregadas aqui dinamicamente -->
+        </div>
+
+        <!-- Botão de Carregar Mais -->
+        <button id="carregarMais" class="btn">Carregar Mais Notícias</button>
+    </section>
+    
+    <!-- Adicionando o arquivo JS -->
+    <script src="./scriptnoticias/noticias.js"></script>
+</body>
+</html>
+
